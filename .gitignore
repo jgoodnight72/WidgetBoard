@@ -1,0 +1,18 @@
+# Java (Maven)
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+*.iml
+
+# VS Code
+.vscode/
+
+# Node (React)
+frontend/node_modules/
+frontend/build/
+
+# OS-specific
+.DS_Store
+Thumbs.db
