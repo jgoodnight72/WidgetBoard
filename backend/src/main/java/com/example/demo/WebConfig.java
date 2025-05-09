@@ -8,7 +8,7 @@ import org.springframework.lang.NonNull;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(@NonNull CorsRegistry registry) {
-        registry.addMapping("/app/hello")
+        registry.addMapping("/app/home")
                 .allowedOrigins("http://localhost:3000");
     }
 }
