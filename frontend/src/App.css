@@ -1,16 +1,14 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 90px;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AM-sun {
+  height: 35px;
+}
+
+.PM-moon {
+  height: 35px;
 }
 
 .App-header {
@@ -22,9 +20,39 @@
   color: white;
 }
 
+.Date-clock {
+  font-size: 2rem;
+  margin-left: auto;
+}
+
+.Time-clock {
+  width: 80px;
+}
+
+.Date-time {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.Time {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+  margin-left: auto;
+}
+
 h1 {
   font-size: calc(30px + 2vmin);
   margin-block-start: 0.4em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @keyframes App-logo-spin {
