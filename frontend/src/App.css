@@ -20,15 +20,6 @@
   color: white;
 }
 
-.Date-clock {
-  font-size: 2rem;
-  margin-left: auto;
-}
-
-.Time-clock {
-  width: 80px;
-}
-
 .Date-time {
   display: flex;
   flex-direction: column;
