@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <img src={logo} className="app-logo" alt="ogo" />
+        <img src={logo} className="app-logo" alt="logo" />
         <h1>Widget Board</h1>
         <Clock/>
       </header>
