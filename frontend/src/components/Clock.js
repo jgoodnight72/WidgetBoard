@@ -38,7 +38,6 @@ function GetDate() {
         weekday = "Monday";
     }
 
-
     let suffix = 'th';
     if (day % 10 === 1 && day !== 11) suffix = 'st';
     else if (day % 10 === 2 && day !== 12) suffix = 'nd';
