@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react';
+import Clock from './components/Clock';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -13,10 +14,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
         <h1>Widget Board</h1>
+        <Clock/>
       </header>
       <p>{message}</p>
     </div>
