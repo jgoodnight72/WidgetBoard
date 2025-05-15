@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logos/logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react';
 import Clock from './components/Clock';

@@ -1,6 +1,6 @@
-import sunLogo from '../sun.svg';
-import moonLogo from '../moon.png';
-import halfSunLogo from '../halfSun.svg';
+import sunLogo from '../logos/sun.svg';
+import moonLogo from '../logos/moon.png';
+import halfSunLogo from '../logos/halfSun.svg';
 import './Clock.css';
 import { useState, useEffect } from 'react';
 
