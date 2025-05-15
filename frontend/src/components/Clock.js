@@ -1,5 +1,6 @@
 import sunLogo from '../sun.svg';
 import moonLogo from '../moon.png';
+import halfSunLogo from '../halfSun.svg';
 import './Clock.css';
 import { useState, useEffect } from 'react';
 
@@ -54,30 +55,32 @@ function GetTime() {
 function GetTimeLogo() {
     const hours = new Date().getHours();
 
-    if (hours >= 12)
+    if (10 <= hours <= 18)
+        return sunLogo;
+    else if (5 >= hours >= 21)
         return moonLogo;
     else
-        return sunLogo;
+        return halfSunLogo;
 }
 
 export default function Clock() {
     
-  const [time, setTime] = useState(new Date());
+    const [time, setTime] = useState(new Date());
 
-  useEffect(() => {
+    useEffect (() => {
     const intervalId = setInterval(() => {
-      setTime(new Date());
+        setTime(new Date());
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, []);
+    }, []);
 
     return (
         <div className="date-and-time">
             <span className="date">{GetDate(time)}</span>
             <span className="time">
                 <img className="time-logo" src={GetTimeLogo(time)} alt="TimeLogo"/>
-                <span >{GetTime(time)}</span>
+                <span>{GetTime(time)}</span>
             </span>
         </div>
     );

@@ -14,13 +14,13 @@
 
 .time {
     font-size: 1.8rem;
-    font-weight: 300;
     display: flex;
     gap: 10px;
     margin-left: auto;
+    font-family: 'ui-sans-serif', monospace;
 }
 
 .time-logo {
-    height: 35px;
-    width: 40px;
+    height: 40px;
+    width: 45px;
 }
