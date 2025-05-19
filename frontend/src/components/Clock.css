@@ -15,6 +15,7 @@
 .time {
     font-size: 1.8rem;
     display: flex;
+    padding-top: 5px;
     gap: 10px;
     margin-left: auto;
     font-family: 'ui-sans-serif', monospace;

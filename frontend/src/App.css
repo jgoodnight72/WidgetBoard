@@ -1,10 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .app-logo {
   height: 90px;
   pointer-events: none;
 }
 
 .app-header {
-  background-color: #653b6a;
+  background-color: #17768b;
   height: 100px;
   display: flex;
   align-items: start;
@@ -12,9 +18,59 @@
   color: white;
 }
 
+.app-main {
+  background-color: #0f252a;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+}
+
+.app-footer {
+  background-color: #bae4ea;
+  height: 120px;
+  display: flex;
+  align-items: start;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+.footer-contact-info {
+  flex-direction: column;
+  width: 250px;
+}
+
+.footer-contact-icons {
+  display: flex;
+}
+
+.git-icon {
+  height: 28px;
+  width: 28px;
+  padding-left: 5px;
+}
+
+.linkedin-icon {
+  height: 25px;
+  width: 25px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
 h1 {
-  font-size: calc(30px + 2vmin);
+  font-size: 50px;
   margin-block-start: 0.4em;
+}
+
+h4 {
+  margin-block: 0em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
